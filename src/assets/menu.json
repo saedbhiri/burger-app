@@ -1,0 +1,1258 @@
+[
+  {
+    "category": "beef",
+    "name": "classic",
+    "image": "https://blackbarburger.co.il/wp-content/uploads/2019/11/burgers_0009_black_burger-min.jpg",
+    "price": 34,
+    "description": "classic burger without mixture",
+    "amount": 1,
+    "weight": [
+      {
+        "price": 12,
+        "quantity": 1,
+        "grams": 150
+      }
+    ],
+    "sideDishes": [
+      {
+        "sideName": "cheder cheese",
+        "sidePrice": 3,
+        "sideValue": false
+      },
+      {
+        "sideName": "fried onions",
+        "sidePrice": 3,
+        "sideValue": false
+      },
+      {
+        "sideName": "jalapeno",
+        "sidePrice": 3,
+        "sideValue": false
+      },
+      {
+        "sideName": "mushroom",
+        "sidePrice": 6,
+        "sideValue": false
+      },
+      {
+        "sideName": "mozzarella cheese",
+        "sidePrice": 12,
+        "sideValue": false
+      }
+    ],
+    "ingredients": [
+      {
+        "ingredientName": "tomato",
+        "ingredientValue": false
+      },
+      {
+        "ingredientName": "onion",
+        "ingredientValue": false
+      },
+      {
+        "ingredientName": "pickledCucumber",
+        "ingredientValue": false
+      },
+      {
+        "ingredientName": "lettuce",
+        "ingredientValue": false
+      }
+    ],
+    "sauces": [
+      {
+        "sauceName": "ketchup",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "mayonnaise",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "skb",
+        "sauceValue": true
+      },
+      {
+        "sauceName": "barbecue",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "mustard",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "spicy",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "sweetChili",
+        "sauceValue": false
+      }
+    ],
+    "note": ""
+  },
+  {
+    "category": "beef",
+    "name": "mexican",
+    "image": "https://blackbarburger.co.il/wp-content/uploads/2019/11/burgers_0013_pikenia-min.jpg",
+    "price": 35,
+    "description": "burger with spicy mixture",
+    "amount": 1,
+    "weight": [
+      {
+        "price": 12,
+        "quantity": 1,
+        "grams": 150
+      }
+    ],
+    "sideDishes": [
+      {
+        "sideName": "cheder cheese",
+        "sidePrice": 3,
+        "sideValue": false
+      },
+      {
+        "sideName": "fried onions",
+        "sidePrice": 3,
+        "sideValue": false
+      },
+      {
+        "sideName": "jalapeno",
+        "sidePrice": 3,
+        "sideValue": false
+      },
+      {
+        "sideName": "mushroom",
+        "sidePrice": 6,
+        "sideValue": false
+      },
+      {
+        "sideName": "mozzarella cheese",
+        "sidePrice": 12,
+        "sideValue": false
+      }
+    ],
+    "ingredients": [
+      {
+        "ingredientName": "tomato",
+        "ingredientValue": false
+      },
+      {
+        "ingredientName": "onion",
+        "ingredientValue": false
+      },
+      {
+        "ingredientName": "pickledCucumber",
+        "ingredientValue": false
+      },
+      {
+        "ingredientName": "lettuce",
+        "ingredientValue": false
+      }
+    ],
+    "sauces": [
+      {
+        "sauceName": "ketchup",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "mayonnaise",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "skb",
+        "sauceValue": true
+      },
+      {
+        "sauceName": "barbecue",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "mustard",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "spicy",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "sweetChili",
+        "sauceValue": false
+      }
+    ],
+    "note": ""
+  },
+  {
+    "category": "beef",
+    "name": "el-chapo",
+    "image": "https://static01.nyt.com/images/2021/05/17/dining/kc-korean-bulgogi-burger/kc-korean-bulgogi-burger-mediumSquareAt3X.jpg",
+    "price": 47,
+    "description": "burger with spicy mixture and cheder cheese and mozzarella mixture",
+    "amount": 1,
+    "weight": [
+      {
+        "price": 12,
+        "quantity": 1,
+        "grams": 150
+      }
+    ],
+    "sideDishes": [
+      {
+        "sideName": "cheder cheese",
+        "sidePrice": 3,
+        "sideValue": false
+      },
+      {
+        "sideName": "fried onions",
+        "sidePrice": 3,
+        "sideValue": false
+      },
+      {
+        "sideName": "jalapeno",
+        "sidePrice": 3,
+        "sideValue": false
+      },
+      {
+        "sideName": "mushroom",
+        "sidePrice": 6,
+        "sideValue": false
+      },
+      {
+        "sideName": "mozzarella cheese",
+        "sidePrice": 12,
+        "sideValue": false
+      }
+    ],
+    "ingredients": [
+      {
+        "ingredientName": "tomato",
+        "ingredientValue": false
+      },
+      {
+        "ingredientName": "onion",
+        "ingredientValue": false
+      },
+      {
+        "ingredientName": "pickledCucumber",
+        "ingredientValue": false
+      },
+      {
+        "ingredientName": "lettuce",
+        "ingredientValue": false
+      }
+    ],
+    "sauces": [
+      {
+        "sauceName": "ketchup",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "mayonnaise",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "skb",
+        "sauceValue": true
+      },
+      {
+        "sauceName": "barbecue",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "mustard",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "spicy",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "sweetChili",
+        "sauceValue": false
+      }
+    ],
+    "note": ""
+  },
+  {
+    "category": "beef",
+    "name": "bushinki",
+    "image": "https://images.cutco.com/learn/2021/stuffed-grilled-burgers-inset-l.jpg",
+    "price": 43,
+    "description": "burger with spicy mixture and cheder cheese and mozzarella included",
+    "amount": 1,
+    "weight": [
+      {
+        "price": 12,
+        "quantity": 1,
+        "grams": 150
+      }
+    ],
+    "sideDishes": [
+      {
+        "sideName": "cheder cheese",
+        "sidePrice": 3,
+        "sideValue": false
+      },
+      {
+        "sideName": "fried onions",
+        "sidePrice": 3,
+        "sideValue": false
+      },
+      {
+        "sideName": "jalapeno",
+        "sidePrice": 3,
+        "sideValue": false
+      },
+      {
+        "sideName": "mushroom",
+        "sidePrice": 6,
+        "sideValue": false
+      },
+      {
+        "sideName": "mozzarella cheese",
+        "sidePrice": 12,
+        "sideValue": false
+      }
+    ],
+    "ingredients": [
+      {
+        "ingredientName": "tomato",
+        "ingredientValue": false
+      },
+      {
+        "ingredientName": "onion",
+        "ingredientValue": false
+      },
+      {
+        "ingredientName": "pickledCucumber",
+        "ingredientValue": false
+      },
+      {
+        "ingredientName": "lettuce",
+        "ingredientValue": false
+      }
+    ],
+    "sauces": [
+      {
+        "sauceName": "ketchup",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "mayonnaise",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "skb",
+        "sauceValue": true
+      },
+      {
+        "sauceName": "barbecue",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "mustard",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "spicy",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "sweetChili",
+        "sauceValue": false
+      }
+    ],
+    "note": ""
+  },
+  {
+    "category": "beef",
+    "name": "skb",
+    "image": "https://media-cdn.tripadvisor.com/media/photo-s/12/b7/b8/ab/mexicano.jpg",
+    "price": 43,
+    "description": "burger of 250g , 2 pecies of classic meat",
+    "amount": 1,
+    "weight": [
+      {
+        "price": 12,
+        "quantity": 1,
+        "grams": 125
+      }
+    ],
+    "sideDishes": [
+      {
+        "sideName": "cheder cheese",
+        "sidePrice": 3,
+        "sideValue": false
+      },
+      {
+        "sideName": "fried onions",
+        "sidePrice": 3,
+        "sideValue": false
+      },
+      {
+        "sideName": "jalapeno",
+        "sidePrice": 3,
+        "sideValue": false
+      },
+      {
+        "sideName": "mushroom",
+        "sidePrice": 6,
+        "sideValue": false
+      },
+      {
+        "sideName": "mozzarella cheese",
+        "sidePrice": 12,
+        "sideValue": false
+      }
+    ],
+    "ingredients": [
+      {
+        "ingredientName": "tomato",
+        "ingredientValue": false
+      },
+      {
+        "ingredientName": "onion",
+        "ingredientValue": false
+      },
+      {
+        "ingredientName": "pickledCucumber",
+        "ingredientValue": false
+      },
+      {
+        "ingredientName": "lettuce",
+        "ingredientValue": false
+      }
+    ],
+    "sauces": [
+      {
+        "sauceName": "ketchup",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "mayonnaise",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "skb",
+        "sauceValue": true
+      },
+      {
+        "sauceName": "barbecue",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "mustard",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "spicy",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "sweetChili",
+        "sauceValue": false
+      }
+    ],
+    "note": ""
+  },
+  {
+    "category": "beef",
+    "name": "skb filled",
+    "image": "https://what2cook.net/wp-content/uploads/2013/01/Cheddar-and-Bacon-Stuffed-Grilled-Burgers.jpg",
+    "price": 56,
+    "description": "burger of 250g classic meat filled with cheder cheese",
+    "amount": 1,
+    "weight": [
+      {
+        "price": 20,
+        "quantity": 1,
+        "grams": 250
+      }
+    ],
+    "sideDishes": [
+      {
+        "sideName": "cheder cheese",
+        "sidePrice": 3,
+        "sideValue": false
+      },
+      {
+        "sideName": "fried onions",
+        "sidePrice": 3,
+        "sideValue": false
+      },
+      {
+        "sideName": "jalapeno",
+        "sidePrice": 3,
+        "sideValue": false
+      },
+      {
+        "sideName": "mushroom",
+        "sidePrice": 6,
+        "sideValue": false
+      },
+      {
+        "sideName": "mozzarella cheese",
+        "sidePrice": 12,
+        "sideValue": false
+      }
+    ],
+    "ingredients": [
+      {
+        "ingredientName": "tomato",
+        "ingredientValue": false
+      },
+      {
+        "ingredientName": "onion",
+        "ingredientValue": false
+      },
+      {
+        "ingredientName": "pickledCucumber",
+        "ingredientValue": false
+      },
+      {
+        "ingredientName": "lettuce",
+        "ingredientValue": false
+      }
+    ],
+    "sauces": [
+      {
+        "sauceName": "ketchup",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "mayonnaise",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "skb",
+        "sauceValue": true
+      },
+      {
+        "sauceName": "barbecue",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "mustard",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "spicy",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "sweetChili",
+        "sauceValue": false
+      }
+    ],
+    "note": ""
+  },
+  {
+    "category": "beef",
+    "name": "grand skb",
+    "image": "https://blackbarburger.co.il/wp-content/uploads/2019/11/burgers_0012_seattle-min.jpg",
+    "price": 56,
+    "description": "burger of 250g with addition of special pecies of meat",
+    "amount": 1,
+    "weight": [
+      {
+        "price": 20,
+        "quantity": 1,
+        "grams": 250
+      }
+    ],
+    "sideDishes": [
+      {
+        "sideName": "cheder cheese",
+        "sidePrice": 3,
+        "sideValue": false
+      },
+      {
+        "sideName": "fried onions",
+        "sidePrice": 3,
+        "sideValue": false
+      },
+      {
+        "sideName": "jalapeno",
+        "sidePrice": 3,
+        "sideValue": false
+      },
+      {
+        "sideName": "mushroom",
+        "sidePrice": 6,
+        "sideValue": false
+      },
+      {
+        "sideName": "mozzarella cheese",
+        "sidePrice": 12,
+        "sideValue": false
+      }
+    ],
+    "ingredients": [
+      {
+        "ingredientName": "tomato",
+        "ingredientValue": false
+      },
+      {
+        "ingredientName": "onion",
+        "ingredientValue": false
+      },
+      {
+        "ingredientName": "pickledCucumber",
+        "ingredientValue": false
+      },
+      {
+        "ingredientName": "lettuce",
+        "ingredientValue": false
+      }
+    ],
+    "sauces": [
+      {
+        "sauceName": "ketchup",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "mayonnaise",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "skb",
+        "sauceValue": true
+      },
+      {
+        "sauceName": "barbecue",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "mustard",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "spicy",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "sweetChili",
+        "sauceValue": false
+      }
+    ],
+    "note": ""
+  },
+  {
+    "category": "beef",
+    "name": "swift",
+    "image": "https://blackbarburger.co.il/wp-content/uploads/2019/11/burgers_0005_IMG_8905-min.jpg",
+    "price": 34,
+    "description": "burger of 110g with addition of mustard and onion ring",
+    "amount": 1,
+    "weight": [
+      {
+        "price": 12,
+        "quantity": 1,
+        "grams": 110
+      }
+    ],
+    "sideDishes": [
+      {
+        "sideName": "cheder cheese",
+        "sidePrice": 3,
+        "sideValue": false
+      },
+      {
+        "sideName": "fried onions",
+        "sidePrice": 3,
+        "sideValue": false
+      },
+      {
+        "sideName": "jalapeno",
+        "sidePrice": 3,
+        "sideValue": false
+      },
+      {
+        "sideName": "mushroom",
+        "sidePrice": 6,
+        "sideValue": false
+      },
+      {
+        "sideName": "mozzarella cheese",
+        "sidePrice": 12,
+        "sideValue": false
+      }
+    ],
+    "ingredients": [
+      {
+        "ingredientName": "tomato",
+        "ingredientValue": false
+      },
+      {
+        "ingredientName": "onion",
+        "ingredientValue": false
+      },
+      {
+        "ingredientName": "pickledCucumber",
+        "ingredientValue": false
+      },
+      {
+        "ingredientName": "lettuce",
+        "ingredientValue": false
+      }
+    ],
+    "sauces": [
+      {
+        "sauceName": "ketchup",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "mayonnaise",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "skb",
+        "sauceValue": true
+      },
+      {
+        "sauceName": "barbecue",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "mustard",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "spicy",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "sweetChili",
+        "sauceValue": false
+      }
+    ],
+    "note": ""
+  },
+  {
+    "category": "chicken",
+    "name": "chicken breast on a plate",
+    "image": "https://img.mishlohim.co.il/mishlohim/static/shared/TagsBackgroundImages/70045384/Mobile/3.png",
+    "price": 32,
+    "description": "chicken breast on a plate with addition of vegetables",
+    "amount": 1,
+    "weight": [
+      {
+        "price": 10,
+        "quantity": 1,
+        "grams": 1
+      }
+    ],
+    "sideDishes": [
+      {
+        "sideName": "cheder cheese",
+        "sidePrice": 3,
+        "sideValue": false
+      },
+      {
+        "sideName": "fried onions",
+        "sidePrice": 3,
+        "sideValue": false
+      },
+      {
+        "sideName": "jalapeno",
+        "sidePrice": 3,
+        "sideValue": false
+      },
+      {
+        "sideName": "mushroom",
+        "sidePrice": 6,
+        "sideValue": false
+      },
+      {
+        "sideName": "mozzarella cheese",
+        "sidePrice": 12,
+        "sideValue": false
+      }
+    ],
+    "ingredients": [
+      {
+        "ingredientName": "tomato",
+        "ingredientValue": false
+      },
+      {
+        "ingredientName": "onion",
+        "ingredientValue": false
+      },
+      {
+        "ingredientName": "pickledCucumber",
+        "ingredientValue": false
+      },
+      {
+        "ingredientName": "lettuce",
+        "ingredientValue": false
+      }
+    ],
+    "sauces": [
+      {
+        "sauceName": "ketchup",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "mayonnaise",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "skb",
+        "sauceValue": true
+      },
+      {
+        "sauceName": "barbecue",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "mustard",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "spicy",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "sweetChili",
+        "sauceValue": false
+      }
+    ],
+    "note": ""
+  },
+  {
+    "category": "chicken",
+    "name": "crispy on a plate",
+    "image": "https://media.azrielimalls.co.il/_media/media/47/45914.jpg?t=1572297108",
+    "price": 37,
+    "description": "5 pecies of crispy chicken on a plate with addition of vegetables",
+    "amount": 1,
+    "sideDishes": [
+      {
+        "sideName": "cheder cheese",
+        "sidePrice": 3,
+        "sideValue": false
+      },
+      {
+        "sideName": "fried onions",
+        "sidePrice": 3,
+        "sideValue": false
+      },
+      {
+        "sideName": "jalapeno",
+        "sidePrice": 3,
+        "sideValue": false
+      },
+      {
+        "sideName": "mushroom",
+        "sidePrice": 6,
+        "sideValue": false
+      },
+      {
+        "sideName": "mozzarella cheese",
+        "sidePrice": 12,
+        "sideValue": false
+      }
+    ],
+    "ingredients": [
+      {
+        "ingredientName": "tomato",
+        "ingredientValue": false
+      },
+      {
+        "ingredientName": "onion",
+        "ingredientValue": false
+      },
+      {
+        "ingredientName": "pickledCucumber",
+        "ingredientValue": false
+      },
+      {
+        "ingredientName": "lettuce",
+        "ingredientValue": false
+      }
+    ],
+    "sauces": [
+      {
+        "sauceName": "ketchup",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "mayonnaise",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "skb",
+        "sauceValue": true
+      },
+      {
+        "sauceName": "barbecue",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "mustard",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "spicy",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "sweetChili",
+        "sauceValue": false
+      }
+    ],
+    "note": ""
+  },
+  {
+    "category": "chicken",
+    "name": "shnitzel",
+    "image": "https://blackbarburger.co.il/wp-content/uploads/2019/11/burgers_0011_Shnizel_Ban-min.jpg",
+    "price": 32,
+    "description": "burger of chicken shnitzel",
+    "amount": 1,
+    "weight": [
+      {
+        "price": 10,
+        "quantity": 1,
+        "grams": 1
+      }
+    ],
+    "sideDishes": [
+      {
+        "sideName": "cheder cheese",
+        "sidePrice": 3,
+        "sideValue": false
+      },
+      {
+        "sideName": "fried onions",
+        "sidePrice": 3,
+        "sideValue": false
+      },
+      {
+        "sideName": "jalapeno",
+        "sidePrice": 3,
+        "sideValue": false
+      },
+      {
+        "sideName": "mushroom",
+        "sidePrice": 6,
+        "sideValue": false
+      },
+      {
+        "sideName": "mozzarella cheese",
+        "sidePrice": 12,
+        "sideValue": false
+      }
+    ],
+    "ingredients": [
+      {
+        "ingredientName": "tomato",
+        "ingredientValue": false
+      },
+      {
+        "ingredientName": "onion",
+        "ingredientValue": false
+      },
+      {
+        "ingredientName": "pickledCucumber",
+        "ingredientValue": false
+      },
+      {
+        "ingredientName": "lettuce",
+        "ingredientValue": false
+      }
+    ],
+    "sauces": [
+      {
+        "sauceName": "ketchup",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "mayonnaise",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "skb",
+        "sauceValue": true
+      },
+      {
+        "sauceName": "barbecue",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "mustard",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "spicy",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "sweetChili",
+        "sauceValue": false
+      }
+    ],
+    "note": ""
+  },
+  {
+    "category": "chicken",
+    "name": "chicken breast",
+    "image": "https://blackbarburger.co.il/wp-content/uploads/2019/11/burgers_0014_Nimrod_Genisher_8142-min.jpg",
+    "price": 32,
+    "description": "burger of flavor chicken breast",
+    "amount": 1,
+    "weight": [
+      {
+        "price": 10,
+        "quantity": 1,
+        "grams": 1
+      }
+    ],
+    "sideDishes": [
+      {
+        "sideName": "cheder cheese",
+        "sidePrice": 3,
+        "sideValue": false
+      },
+      {
+        "sideName": "fried onions",
+        "sidePrice": 3,
+        "sideValue": false
+      },
+      {
+        "sideName": "jalapeno",
+        "sidePrice": 3,
+        "sideValue": false
+      },
+      {
+        "sideName": "mushroom",
+        "sidePrice": 6,
+        "sideValue": false
+      },
+      {
+        "sideName": "mozzarella cheese",
+        "sidePrice": 12,
+        "sideValue": false
+      }
+    ],
+    "ingredients": [
+      {
+        "ingredientName": "tomato",
+        "ingredientValue": false
+      },
+      {
+        "ingredientName": "onion",
+        "ingredientValue": false
+      },
+      {
+        "ingredientName": "pickledCucumber",
+        "ingredientValue": false
+      },
+      {
+        "ingredientName": "lettuce",
+        "ingredientValue": false
+      }
+    ],
+    "sauces": [
+      {
+        "sauceName": "ketchup",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "mayonnaise",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "skb",
+        "sauceValue": true
+      },
+      {
+        "sauceName": "barbecue",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "mustard",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "spicy",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "sweetChili",
+        "sauceValue": false
+      }
+    ],
+    "note": ""
+  },
+  {
+    "category": "chicken",
+    "name": "crispy chicken breast",
+    "image": "https://w7.pngwing.com/pngs/470/654/png-transparent-chicken-sandwich-hamburger-crispy-fried-chicken-whopper-cheeseburger-burger-and-sandwich-food-recipe-chicken-meat-thumbnail.png",
+    "price": 37,
+    "description": "crispy burger of flavor chicken breast",
+    "amount": 1,
+    "weight": [
+      {
+        "price": 10,
+        "quantity": 1,
+        "grams": 1
+      }
+    ],
+    "sideDishes": [
+      {
+        "sideName": "cheder cheese",
+        "sidePrice": 3,
+        "sideValue": false
+      },
+      {
+        "sideName": "fried onions",
+        "sidePrice": 3,
+        "sideValue": false
+      },
+      {
+        "sideName": "jalapeno",
+        "sidePrice": 3,
+        "sideValue": false
+      },
+      {
+        "sideName": "mushroom",
+        "sidePrice": 6,
+        "sideValue": false
+      },
+      {
+        "sideName": "mozzarella cheese",
+        "sidePrice": 12,
+        "sideValue": false
+      }
+    ],
+    "ingredients": [
+      {
+        "ingredientName": "tomato",
+        "ingredientValue": false
+      },
+      {
+        "ingredientName": "onion",
+        "ingredientValue": false
+      },
+      {
+        "ingredientName": "pickledCucumber",
+        "ingredientValue": false
+      },
+      {
+        "ingredientName": "lettuce",
+        "ingredientValue": false
+      }
+    ],
+    "sauces": [
+      {
+        "sauceName": "ketchup",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "mayonnaise",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "skb",
+        "sauceValue": true
+      },
+      {
+        "sauceName": "barbecue",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "mustard",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "spicy",
+        "sauceValue": false
+      },
+      {
+        "sauceName": "sweetChili",
+        "sauceValue": false
+      }
+    ],
+    "note": ""
+  },
+  {
+    "category": "side-dishes",
+    "name": "nugget",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwZyMIz8nE3QcFyEAY_yldZTFokcaoEUPBfA&usqp=CAU",
+    "price": 26,
+    "amount": 1,
+    "note": ""
+  },
+  {
+    "category": "side-dishes",
+    "name": "skb mix",
+    "image": "https://blackcherry.co.il/wp-content/uploads/2019/07/106-1.jpg",
+    "price": 45,
+    "amount": 1,
+    "note": ""
+  },
+  {
+    "category": "side-dishes",
+    "name": "crispy chicken",
+    "image": "https://s1.kikar.co.il/th/data/auto/nadm/vx/2n3tkcsq__w650h433q95.jpg",
+    "price": 28,
+    "amount": 1,
+    "note": ""
+  },
+  {
+    "category": "side-dishes",
+    "name": "crispy mozzarella",
+    "image": "https://images.wcdn.co.il/f_auto,q_auto,w_1000,t_54/2/1/1/5/2115238-46.jpg",
+    "price": 25,
+    "amount": 1,
+    "note": ""
+  },
+  {
+    "category": "side-dishes",
+    "name": "mini shnitzel",
+    "image": "https://www.kal-lehachana.co.il/wp-content/uploads/2020/03/%D7%A9%D7%A0%D7%99%D7%A6%D7%9C%D7%95%D7%A0%D7%99%D7%9D-2.jpg",
+    "price": 28,
+    "amount": 1,
+    "note": ""
+  },
+  {
+    "category": "side-dishes",
+    "name": "onion rings",
+    "image": "https://www.makorrishon.co.il/nrg/images/archive/465x349/1/344/381.jpg",
+    "price": 15,
+    "amount": 1,
+    "note": ""
+  },
+  {
+    "category": "side-dishes",
+    "name": "mashed potatoes",
+    "image": "https://www.mabasir.co.il/files/recipes/resized/recipe_71.jpg",
+    "price": 15,
+    "amount": 1,
+    "note": ""
+  },
+  {
+    "category": "drinks",
+    "name": "coca cola",
+    "image": "https://www.mamos.co.il/wp-content/uploads/2019/07/11473976197150.jpg",
+    "price": 10,
+    "amount": 1,
+    "note": ""
+  },
+  {
+    "category": "drinks",
+    "name": "zero coca",
+    "image": "https://cashcow-cdn.azureedge.net/images/90d6497b-118a-44f0-a43f-03a68217ded8.jpg",
+    "price": 10,
+    "amount": 1,
+    "note": ""
+  },
+  {
+    "category": "drinks",
+    "name": "miniral water",
+    "image": "https://www.ktzat.co.il/ProductsImages/H993203.jpg",
+    "price": 7,
+    "amount": 1,
+    "note": ""
+  }
+]

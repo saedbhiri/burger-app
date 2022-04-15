@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="text-center">
+      <h1>Thank You For Chossing Us</h1>
+    </div>
+    <hr>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="card text-center space" *ngFor="let branch of branches">
+        <div class="card-header">
+          KSB {{ branch.city }}
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Phone Number: {{ branch.phoneNumber }}</h5>
+          <p class="card-text"> Address : {{ branch.address }}</p>
+        </div>
+      </div>
+    </div>
+    <p class="text-center">&copy;Saed Bhiri</p>
+  </div>
+</div>

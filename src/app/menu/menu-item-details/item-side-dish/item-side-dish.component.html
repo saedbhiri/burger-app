@@ -1,0 +1,11 @@
+<form [formGroup]="form">
+<div class="row mb-4" *ngFor="let sideDish of sideDishes; let i = index">
+  <label class="col-sm-3 form-check-label" [for]="i">
+    {{ sideDish.sideName }} + {{ sideDish.sidePrice | currency:'ILS' }}
+  </label>
+  <div class="col-sm-4">
+    <input class="col-form-check-input" type="checkbox" [id]="i" formArrayName="sideDishes"
+      [value]="sideDish.sideName" [checked]="sideDish.sideValue" (change)="onSideDishesSelected($event)">
+  </div>
+</div>
+</form>

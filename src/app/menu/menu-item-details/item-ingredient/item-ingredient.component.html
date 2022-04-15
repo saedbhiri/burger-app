@@ -1,0 +1,12 @@
+<form [formGroup]="form">
+<div class="row mb-4" *ngFor="let ingredient of ingredients; let i = index">
+  <label class="col-sm-3 form-check-label" [for]="i">
+    {{ ingredient.ingredientName }}
+  </label>
+  <div class="col-sm-4">
+    <input class="col-form-check-input" type="checkbox" [id]="i" formArrayName="ingredients"
+      [value]="ingredient.ingredientName" [checked]="ingredient.ingredientValue"
+      (change)="onIngredientSelected($event)">
+  </div>
+</div>
+</form>
