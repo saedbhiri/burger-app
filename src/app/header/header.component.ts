@@ -10,13 +10,13 @@ import { Menu } from '../shared/menu.model';
 })
 export class HeaderComponent implements OnInit, OnDestroy {
   shoppingCart: Menu[];
-  shoppingCartSub: Subscription
+  shoppingCartSub: Subscription;
 
-  constructor(private shoppingCartService:ShoppingCartService){}
+  constructor(private shoppingCartService: ShoppingCartService) { }
 
   ngOnInit(): void {
     this.shoppingCart = this.shoppingCartService.getShoppingCart();
-    this.shoppingCartSub = this.shoppingCartService.shoppingCartChanged.subscribe((shoppingCart:Menu[]) => {
+    this.shoppingCartSub = this.shoppingCartService.shoppingCartChanged.subscribe((shoppingCart: Menu[]) => {
       this.shoppingCart = shoppingCart;
     });
   }

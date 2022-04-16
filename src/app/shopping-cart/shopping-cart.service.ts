@@ -6,10 +6,9 @@ import { Subject } from 'rxjs';
 export class ShoppingCartService {
 
   private shoppingCart: Menu[] = [];
-  private sum: number = 0;
   shoppingCartChanged = new Subject<Menu[]>();
 
-  getShoppingCart(){
+  getShoppingCart() {
     return this.shoppingCart.slice();
   }
 
@@ -28,22 +27,64 @@ export class ShoppingCartService {
     this.shoppingCartChanged.next(this.shoppingCart.slice());
   }
 
-  getShoppingCartLength(){
+  getShoppingCartLength() {
     return this.shoppingCart.length;
   }
 
-  calculatePrice(item: Menu) : number {
-    this.sum = item.price;
+  calculatePrice(item: Menu): number {
+    let sum = item.price;
     item.weight.forEach(weight => {
-      this.sum += (weight.quantity - 1) * weight.price;
+      sum += (weight.quantity - 1) * weight.price;
     })
 
     item.sideDishes.forEach(sideDish => {
       if (sideDish.sideValue)
-        this.sum += sideDish.sidePrice;
+        sum += sideDish.sidePrice;
     })
 
-    return this.sum *=  item.amount;
+    return sum *= item.amount;
+  }
+
+  calculateTotalPrice(shoppingCart: Menu[]): number {
+    let sum = 0;
+    shoppingCart.forEach(item => {
+      sum += this.calculatePrice(item);
+    })
+    return sum;
+  }
+
+  getSideDishe(item: Menu): string[] {
+    let sideDishNames = [];
+    item.sideDishes.forEach(sideDish => {
+      if (sideDish.sideValue)
+        sideDishNames.push("+" + sideDish.sideName);
+    })
+    return sideDishNames;
+  }
+
+  getIngredients(item: Menu): string[] {
+    let ingredientsNames = [];
+    item.ingredients.forEach(ingredient => {
+      if (!ingredient.ingredientValue)
+        ingredientsNames.push("-" + ingredient.ingredientName);
+    })
+    return ingredientsNames;
+  }
+
+  getSauces(item: Menu): string[] {
+    let saucesNames = [];
+    item.sauces.forEach(sauce => {
+      if (sauce.sauceName != "skb") {
+        if (sauce.sauceValue)
+          saucesNames.push("+" + sauce.sauceName);
+      }
+      else {
+        if (!sauce.sauceValue) {
+          saucesNames.push("-" + sauce.sauceName)
+        }
+      }
+    })
+    return saucesNames;
   }
 
 }

@@ -1,3 +1,6 @@
+import { ContactUsModule } from './contact-us/contact-us.module';
+import { MenuModule } from './menu/menu.module';
+import { ShoppingCartModule } from './shopping-cart/shopping-cart.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
@@ -14,7 +17,10 @@ import { AppRoutingModule } from './app-routing.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    MenuModule,
+    ShoppingCartModule,
+    ContactUsModule
   ],
   bootstrap: [AppComponent]
 })

@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img [src]="shoppingCartItem.image" class="img-fluid rounded-start" [alt]="shoppingCartItem.name">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">
+                {{shoppingCartItem.name}} (x{{shoppingCartItem.amount}})</h5>
+              <p class="card-text" *ngFor="let weight of shoppingCartItem.weight">weight : {{weight.grams *
+                weight.quantity}}</p>
+              <p class="card-text" *ngFor="let sideDish of sideDishesName">{{sideDish}}</p>
+              <p class="card-text" *ngFor="let ingredient of ingredientsName">{{ingredient}}</p>
+              <p class="card-text" *ngFor="let sauce of saucesName">{{sauce}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer text-muted">
+          <p class="card-text">
+            <small class="text-muted">
+              <div class="row">
+                <div class="col-md-2">
+                  {{price | currency:"ILS"}}
+                </div>
+                <div class="col-md-6">
+                </div>
+                <div class="col-md-2">
+                  <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                </div>
+                <div class="col-md-2">
+                  <button type="button" class="btn btn-danger btn-sm"
+                    (click)="onDeleteItem(indexOfItem)">Delete</button>
+                </div>
+              </div>
+            </small>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
