@@ -8,7 +8,6 @@ import { MenuRouting } from './menu-routing.module';
 import { MenuButtonsComponent } from './menu-list/menu-buttons/menu-buttons.component';
 import { CategoryPipe } from './category.pipe';
 import { MenuItemDetailsComponent } from './menu-item-details/menu-item-details.component';
-import { MenuStartComponent } from './menu-start/menu-start.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ItemHeaderComponent } from './menu-item-details/item-header/item-header.component';
 import { ItemAmountComponent } from './menu-item-details/item-amount/item-amount.component';
@@ -27,7 +26,6 @@ import { ItemNoteComponent } from './menu-item-details/item-note/item-note.compo
       MenuItemComponent,
       CategoryPipe,
       MenuItemDetailsComponent,
-      MenuStartComponent,
       ItemHeaderComponent,
       ItemAmountComponent,
       ItemWeightComponent,

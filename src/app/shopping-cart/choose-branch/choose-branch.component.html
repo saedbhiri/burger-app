@@ -1,0 +1,26 @@
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="text-center">
+        <h1>Please choose branch of SKB</h1>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="card text-center space" *ngFor="let branch of branches">
+        <div class="card-header">
+          {{branch.city}}
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">{{branch.endTime}} - {{branch.startTime}}</h5>
+          <p *ngIf="checkTime(branch.startTime,branch.endTime)" class="card-text">the branch is opened right now</p>
+          <p *ngIf="!checkTime(branch.startTime,branch.endTime)" class="card-text">the branch is closed right now</p>
+          <a [routerLink]="['../receivingOrderWay']" class="btn btn-dark" (click)="onChoose(branch.city,branch.startTime,branch.endTime)">Choose</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

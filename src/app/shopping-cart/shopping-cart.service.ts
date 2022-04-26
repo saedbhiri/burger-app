@@ -7,6 +7,9 @@ export class ShoppingCartService {
 
   private shoppingCart: Menu[] = [];
   shoppingCartChanged = new Subject<Menu[]>();
+  private branchName: string;
+  private receivingOrderWay:string;
+  private paymentMethod:string;
 
   getShoppingCart() {
     return this.shoppingCart.slice();
@@ -85,6 +88,30 @@ export class ShoppingCartService {
       }
     })
     return saucesNames;
+  }
+
+  storeBranch(branch: string) {
+    this.branchName = branch;
+  }
+
+  getBranch(){
+    return this.branchName;
+  }
+
+  storeReceivingOrderWay(order: string) {
+    this.receivingOrderWay = order;
+  }
+
+  getReceivingOrderWay(){
+    return this.receivingOrderWay;
+  }
+
+  storePaymentMethod(payment:string){
+    this.paymentMethod = payment;
+  }
+
+  getPaymentMethod(){
+    return this.paymentMethod;
   }
 
 }

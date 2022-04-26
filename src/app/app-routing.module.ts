@@ -1,6 +1,5 @@
-import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { NgModule } from "@angular/core";
-import { RouterModule, Routes } from "@angular/router";
+import { PreloadAllModules, RouterModule, Routes } from "@angular/router";
 
 const appRoute: Routes = [
   { path: '', redirectTo: '/main', pathMatch: 'full' },
@@ -19,11 +18,17 @@ const appRoute: Routes = [
   {
     path: 'shopping-cart',
     loadChildren: () => import("./shopping-cart/shopping-cart-routing.module").then(m => m.ShoppingCartRouting)
+  },
+  {
+    path: '**',
+    loadChildren: () => import("./main/main.module").then(m => m.MainModule)
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(appRoute)],
+  imports: [RouterModule.forRoot(appRoute, {
+    preloadingStrategy: PreloadAllModules
+  })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

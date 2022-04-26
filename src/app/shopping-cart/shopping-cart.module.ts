@@ -6,6 +6,8 @@ import { NgModule } from "@angular/core";
 import { ShoppingCartListComponent } from './shopping-cart-list/shopping-cart-list.component';
 import { ShoppingCartItemComponent } from './shopping-cart-list/shopping-cart-item/shopping-cart-item.component';
 import { ShoppingCartPaymentComponent } from './shopping-cart-list/shopping-cart-payment/shopping-cart-payment.component';
+import { ChooseBranchComponent } from './choose-branch/choose-branch.component';
+import { ReceiveOrderWayComponent } from './receive-order-way/receive-order-way.component';
 
 @NgModule(
   {
@@ -14,7 +16,9 @@ import { ShoppingCartPaymentComponent } from './shopping-cart-list/shopping-cart
         ShoppingCartComponent,
         ShoppingCartListComponent,
         ShoppingCartItemComponent,
-        ShoppingCartPaymentComponent
+        ShoppingCartPaymentComponent,
+        ChooseBranchComponent,
+        ReceiveOrderWayComponent
       ],
     imports:
       [
