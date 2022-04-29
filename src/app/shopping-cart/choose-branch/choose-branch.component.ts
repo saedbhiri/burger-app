@@ -37,6 +37,12 @@ export class ChooseBranchComponent implements OnInit {
       return false;
     }
 
+    else if(this.currentTime.getHours() > +startTime[0]){
+      if (this.currentTime.getHours() > +endTime[0]){
+        return false;
+      }
+    }
+
     else if (this.currentTime.getHours() == +startTime[0]) {
       if (this.currentTime.getMinutes() < +startTime[1]) {
         return false;

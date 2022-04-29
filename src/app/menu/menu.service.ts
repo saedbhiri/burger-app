@@ -14,7 +14,7 @@ export class MenuService {
   constructor(private http: HttpClient,
     private shoppingCartService:ShoppingCartService) { }
 
-  getJson(): Observable<Menu[]> {
+  fetchMenu(): Observable<Menu[]> {
     return this.http.get<Menu[]>("./assets/menu.json")
       .pipe(
         map(data => {

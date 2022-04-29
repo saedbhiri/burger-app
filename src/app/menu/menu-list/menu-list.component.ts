@@ -13,7 +13,7 @@ export class MenuListComponent implements OnInit {
   categorySelected: string = "beef";
 
   constructor(private menuService: MenuService) {
-    this.menuService.getJson().subscribe(
+    this.menuService.fetchMenu().subscribe(
       data => {
         this.menu = data;
         this.menuService.SetMenu(this.menu);
