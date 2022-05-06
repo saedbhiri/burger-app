@@ -43,7 +43,6 @@ import { ItemNoteComponent } from './menu-item-details/item-note/item-note.compo
     ],
   exports:
     [
-
     ]
 })
 export class MenuModule {

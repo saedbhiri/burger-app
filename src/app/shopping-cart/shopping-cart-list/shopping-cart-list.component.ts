@@ -22,11 +22,13 @@ export class ShoppingCartListComponent implements OnInit, OnDestroy {
       this.shoppingCart = shoppingCart;
     });
     this.totalSum = this.shoppingCartService.calculateTotalPrice(this.shoppingCart);
+    this.shoppingCartService.storeTotalPrice(this.totalSum);
   }
 
   onDeleteFromShoppingCart(event:number) {
     this.shoppingCartService.deleteFromShoppingCart(event);
     this.totalSum = this.shoppingCartService.calculateTotalPrice(this.shoppingCart);
+    this.shoppingCartService.storeTotalPrice(this.totalSum);
   }
 
   ngOnDestroy(): void {

@@ -1,3 +1,4 @@
+import { ShoppingCartService } from './../shopping-cart.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReceiveOrderWayComponent implements OnInit {
 
-  constructor() { }
+  constructor(private shoppingCartService:ShoppingCartService) { }
 
   ngOnInit(): void {
+  }
+
+  OnReceivingWay(receivingWay:string){
+    this.shoppingCartService.storeReceivingOrderWay(receivingWay);
   }
 
 }

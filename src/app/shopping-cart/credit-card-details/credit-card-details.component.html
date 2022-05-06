@@ -1,0 +1,69 @@
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h3>Please fill the credit card details</h3>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-md-3">
+      <label>Total Price: {{totalPrice | currency:"ILS"}}</label>
+    </div>
+    <div class="col-md-2">
+    </div>
+    <div class="col-md-4">
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-credit-card"
+        viewBox="0 0 16 16">
+        <path
+          d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z" />
+        <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z" />
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-lock"
+        viewBox="0 0 16 16">
+        <path
+          d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z" />
+      </svg>
+    </div>
+  </div>
+  <div class="row">
+    <form class="row g-3" #creditCardForm="ngForm" (ngSubmit)="onAddCreditCard(creditCardForm)">
+      <div class="row">
+        <div class="col-md-6">
+          <label for="cardNumber" class="form-label">Card Number</label>
+          <input type="text" class="form-control" id="cardNumber" name="cardNumber" ngModel required pattern="^[1-9]+[0-9]*$" maxlength="16" minlength="16">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <label for="carHolder" class="form-label">Card Holder</label>
+          <input type="text" class="form-control" id="carHolder" name="cardHolder" ngModel required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <label for="year" class="form-label">Year Expiration</label>
+          <input type="text" class="form-control" id="year" name="year" ngModel required pattern="^[1-9]+[0-9]*$" maxlength="4" minlength="4">
+        </div>
+        <div class="col-md-2">
+          <label for="month" class="form-label">Month Expiration</label>
+          <input type="text" class="form-control" id="month" name="month" ngModel required pattern="^[0-9]*$" maxlength="2" minlength="2">
+        </div>
+        <div class="col-md-2">
+          <label for="cvv" class="form-label">CVV</label>
+          <input type="text" class="form-control" id="cvv" name="cvv" ngModel required pattern="^[0-9]*$" maxlength="3" minlength="3">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <label for="IdNumber" class="form-label">ID Number</label>
+          <input type="text" class="form-control" id="IdNumber" name="idNumber" ngModel required pattern="^[0-9]*$" maxlength="9" minlength="9">
+        </div>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-dark" type="submit" [disabled]="!creditCardForm.valid">Submit</button>
+        <button class="btn btn-danger" style="margin-left: 10px;" type="button" (click)="onCreditCardCancel()">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>

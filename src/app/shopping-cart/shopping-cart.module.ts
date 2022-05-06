@@ -1,3 +1,4 @@
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ShoppingCartRouting } from './shopping-cart-routing.module';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
@@ -8,6 +9,10 @@ import { ShoppingCartItemComponent } from './shopping-cart-list/shopping-cart-it
 import { ShoppingCartPaymentComponent } from './shopping-cart-list/shopping-cart-payment/shopping-cart-payment.component';
 import { ChooseBranchComponent } from './choose-branch/choose-branch.component';
 import { ReceiveOrderWayComponent } from './receive-order-way/receive-order-way.component';
+import { PaymentMethodComponent } from './payment-method/payment-method.component';
+import { CustomerInformationComponent } from './customer-information/customer-information.component';
+import { CreditCardDetailsComponent } from './credit-card-details/credit-card-details.component';
+import { OrderSummaryComponent } from './order-summary/order-summary.component';
 
 @NgModule(
   {
@@ -18,12 +23,18 @@ import { ReceiveOrderWayComponent } from './receive-order-way/receive-order-way.
         ShoppingCartItemComponent,
         ShoppingCartPaymentComponent,
         ChooseBranchComponent,
-        ReceiveOrderWayComponent
+        ReceiveOrderWayComponent,
+        PaymentMethodComponent,
+        CustomerInformationComponent,
+        CreditCardDetailsComponent,
+        OrderSummaryComponent
       ],
     imports:
       [
         CommonModule,
         RouterModule,
+        ReactiveFormsModule,
+        FormsModule,
         ShoppingCartRouting
       ]
   }

@@ -33,28 +33,18 @@ export class ChooseBranchComponent implements OnInit {
     const startTime = start.split(':');
     const endTime = end.split(':');
 
-    if (this.currentTime.getHours() < +startTime[0]){
-      return false;
-    }
+    const timeFrom = new Date();
+    timeFrom.setHours(parseInt(startTime[0]));
+    timeFrom.setMinutes(parseInt(startTime[1]));
 
-    else if(this.currentTime.getHours() > +startTime[0]){
-      if (this.currentTime.getHours() > +endTime[0]){
-        return false;
-      }
-    }
+    const timeTo = new Date();
+    timeTo.setHours(parseInt(endTime[0]));
+    timeTo.setMinutes(parseInt(endTime[1]));
 
-    else if (this.currentTime.getHours() == +startTime[0]) {
-      if (this.currentTime.getMinutes() < +startTime[1]) {
-        return false;
-      }
-    }
+    if (this.currentTime > timeFrom && this.currentTime < timeTo)
+      return true
+    else return false;
 
-    if (this.currentTime.getHours() == +endTime[0]) {
-      if (this.currentTime.getMinutes() > +startTime[1]) {
-        return false;
-      }
-    }
-    return true;
   }
 
   onChoose(branch: string, start: string, end: string) {

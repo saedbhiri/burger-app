@@ -1,3 +1,5 @@
+import { CreditCard } from './../shared/creditCard.model';
+import { CustomerInfo } from './../shared/customerInfo.model';
 import { Menu } from './../shared/menu.model';
 import { Injectable } from "@angular/core";
 import { Subject } from 'rxjs';
@@ -7,9 +9,13 @@ export class ShoppingCartService {
 
   private shoppingCart: Menu[] = [];
   shoppingCartChanged = new Subject<Menu[]>();
+  private totalPrice: number = 0;
+  private deliveryPrice: number = 0;
   private branchName: string;
-  private receivingOrderWay:string;
-  private paymentMethod:string;
+  private receivingOrderWay: string;
+  private paymentMethod: string;
+  private customerInfo: CustomerInfo;
+  private creditCard: CreditCard;
 
   getShoppingCart() {
     return this.shoppingCart.slice();
@@ -94,7 +100,7 @@ export class ShoppingCartService {
     this.branchName = branch;
   }
 
-  getBranch(){
+  getBranch() {
     return this.branchName;
   }
 
@@ -102,16 +108,45 @@ export class ShoppingCartService {
     this.receivingOrderWay = order;
   }
 
-  getReceivingOrderWay(){
+  getReceivingOrderWay() {
     return this.receivingOrderWay;
   }
 
-  storePaymentMethod(payment:string){
+  storePaymentMethod(payment: string) {
     this.paymentMethod = payment;
   }
 
-  getPaymentMethod(){
+  getPaymentMethod() {
     return this.paymentMethod;
+  }
+
+  storeTotalPrice(total: number) {
+    this.totalPrice = total;
+  }
+
+  getTotalPrice() {
+    return this.totalPrice;
+  }
+
+  addCustomerInfo(custInfo: CustomerInfo) {
+    this.customerInfo = custInfo;
+    this.deliveryPrice = 30;
+  }
+
+  getCustomerInfo() {
+    return this.customerInfo;
+  }
+
+  getDeliveryPrice() {
+    return this.deliveryPrice;
+  }
+
+  addCreditCard(creditCard: CreditCard) {
+    this.creditCard = creditCard;
+  }
+
+  getCreditCard() {
+    return this.creditCard;
   }
 
 }
