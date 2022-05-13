@@ -11,13 +11,8 @@ import { NgModule } from "@angular/core";
 import { ChooseBranchComponent } from './choose-branch/choose-branch.component';
 
 const routes: Routes = [
-  {
-    path: '', component: ShoppingCartComponent,
-    children:
-      [
-        { path: "edit", component: MenuItemDetailsComponent }
-      ]
-  },
+  { path: '', component: ShoppingCartComponent },
+  { path: "edit/:id", component: MenuItemDetailsComponent },
   { path: 'branches', component: ChooseBranchComponent },
   { path: 'receivingOrderWay', component: ReceiveOrderWayComponent },
   { path: 'paymentMethod', component: PaymentMethodComponent },

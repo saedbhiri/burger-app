@@ -40,6 +40,14 @@ export class ShoppingCartService {
     return this.shoppingCart.length;
   }
 
+  getShoppingCartByIndex(index: number) {
+    return this.shoppingCart[index];
+  }
+
+  getShoppingCartByName(name: string) {
+    return this.shoppingCart.find(element => element.name === name);
+  }
+
   calculatePrice(item: Menu): number {
     let sum = item.price;
     item.weight.forEach(weight => {

@@ -1,3 +1,4 @@
+import { ShoppingCartService } from './../../shopping-cart/shopping-cart.service';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { MenuService } from './../menu.service';
 import { Menu } from './../../shared/menu.model';
@@ -14,11 +15,14 @@ export class MenuItemDetailsComponent implements OnInit, OnDestroy {
 
   menuItem: Menu;
   name: string;
+  id: number;
+  editMode: boolean = false;
   itemDetailsForm: FormGroup;
   paramRoutesub: Subscription;
   shoppingCartItem: Menu;
 
   constructor(private menuService: MenuService,
+    private shoppingCartService: ShoppingCartService,
     private route: ActivatedRoute,
     private router: Router) {
   }
@@ -27,7 +31,14 @@ export class MenuItemDetailsComponent implements OnInit, OnDestroy {
     this.paramRoutesub = this.route.params.subscribe(
       (params: Params) => {
         this.name = params['name'];
-        this.menuItem = this.menuService.getMenuItemByName(this.name);
+        this.editMode = params['name'] == null;
+        if (!this.editMode) {
+          this.menuItem = this.menuService.getMenuItemByName(this.name);
+        }
+        else {
+          this.id = params['id'];
+          this.menuItem = this.shoppingCartService.getShoppingCartByIndex(this.id);
+        }
       }
     );
 
@@ -43,9 +54,26 @@ export class MenuItemDetailsComponent implements OnInit, OnDestroy {
 
   onSubmit() {
     this.shoppingCartItem = Object.assign({}, this.menuItem, this.itemDetailsForm.value);
-    this.menuService.addItemToShoppingCart(this.shoppingCartItem);
-    this.itemDetailsForm.reset();
-    this.router.navigate(['/menu'], { relativeTo: this.route });
+
+    if (this.editMode) {
+      this.shoppingCartService.updateShoppingCart(this.id, this.shoppingCartItem);
+      this.itemDetailsForm.reset();
+      this.router.navigate(['/shopping-cart'], { relativeTo: this.route });
+    }
+    else {
+      this.menuService.addItemToShoppingCart(this.shoppingCartItem);
+      this.itemDetailsForm.reset();
+      this.router.navigate(['/menu'], { relativeTo: this.route });
+    }
+  }
+
+  onBack() {
+    if (this.editMode) {
+      this.router.navigate(['/shopping-cart'], { relativeTo: this.route });
+    }
+    else {
+      this.router.navigate(['/menu'], { relativeTo: this.route });
+    }
   }
 
   ngOnDestroy(): void {

@@ -1,3 +1,4 @@
+import { MenuModule } from './../menu/menu.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ShoppingCartRouting } from './shopping-cart-routing.module';
 import { RouterModule } from '@angular/router';
@@ -35,7 +36,8 @@ import { OrderSummaryComponent } from './order-summary/order-summary.component';
         RouterModule,
         ReactiveFormsModule,
         FormsModule,
-        ShoppingCartRouting
+        ShoppingCartRouting,
+        MenuModule
       ]
   }
 )
