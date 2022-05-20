@@ -8,38 +8,46 @@
   <br>
   <div class="row">
     <div class="col">
-      <form [formGroup]="custonerInfoForm" (ngSubmit)="onCustomerInfoFormSubmit()" class="row g-3">
+      <form [formGroup]="customerInfoForm" (ngSubmit)="onCustomerInfoFormSubmit()" class="row g-3">
         <div class="col-md-5">
           <label for="firstName" class="form-label">First name</label>
           <input type="text" class="form-control" id="firstName" formControlName="firstName">
+          <span *ngIf="customerInfoForm.controls['firstName'].invalid && customerInfoForm.controls['firstName'].touched" style="color:red">*Please enter First name!</span>
         </div>
         <div class="col-md-5">
           <label for="lastName" class="form-label">Last name</label>
           <input type="text" class="form-control" id="lastName" formControlName="lastName">
+          <span *ngIf="customerInfoForm.controls['lastName'].invalid && customerInfoForm.controls['lastName'].touched" style="color:red">*Please enter Last name!</span>
         </div>
         <div class="col-md-5">
           <label for="phoneNumber" class="form-label">Phone number</label>
           <input type="text" class="form-control" id="phoneNumber" formControlName="phoneNumber">
+          <span *ngIf="customerInfoForm.controls['phoneNumber'].invalid && customerInfoForm.controls['phoneNumber'].touched" style="color:red">*Please enter valid Phone number!</span>
         </div>
         <div class="col-md-5">
           <label for="email" class="form-label">Email</label>
           <input type="text" class="form-control" id="email" formControlName="email">
+          <span *ngIf="customerInfoForm.controls['email'].invalid && customerInfoForm.controls['email'].touched" style="color:red">*Please enter valid Email!</span>
         </div>
         <div class="col-md-5">
           <label for="city" class="form-label">City</label>
           <input type="text" class="form-control" id="city" formControlName="city">
+          <span *ngIf="customerInfoForm.controls['city'].invalid && customerInfoForm.controls['city'].touched" style="color:red">*Please enter City!</span>
         </div>
         <div class="col-md-5">
           <label for="streetNumber" class="form-label">Street number</label>
           <input type="text" class="form-control" id="streetNumber" formControlName="streetNumber">
+          <span *ngIf="customerInfoForm.controls['streetNumber'].invalid && customerInfoForm.controls['streetNumber'].touched" style="color:red">*Please enter Streer number!</span>
         </div>
         <div class="col-md-5">
           <label for="houseNumber" class="form-label">House number</label>
           <input type="text" class="form-control" id="houseNumber" formControlName="houseNumber">
+          <span *ngIf="customerInfoForm.controls['houseNumber'].invalid && customerInfoForm.controls['houseNumber'].touched" style="color:red">*Please enter House number!</span>
         </div>
         <div class="col-md-5">
           <label for="zip" class="form-label">Zip</label>
           <input type="text" class="form-control" id="zip" formControlName="zip">
+          <span *ngIf="customerInfoForm.controls['zip'].invalid && customerInfoForm.controls['zip'].touched" style="color:red">*Please enter valid Zip number!</span>
         </div>
         <div class="col-12">
           <div class="form-check">
@@ -47,10 +55,12 @@
             <label class="form-check-label" for="confirm">
               Agree to pay {{30|currency:"ILS"}} for delivery
             </label>
+            <br>
+            <span *ngIf="customerInfoForm.controls['confirmConditions'].invalid && customerInfoForm.controls['confirmConditions'].touched" style="color:red">*Please confirm delivery cost!</span>
           </div>
         </div>
         <div class="col-12">
-          <button class="btn btn-dark" type="submit" [disabled]="!custonerInfoForm.valid">Submit</button>
+          <button class="btn btn-dark" type="submit" [disabled]="!customerInfoForm.valid">Submit</button>
           <button class="btn btn-danger" style="margin-left: 10px;" type="button" (click)="onCancel()">Cancel</button>
         </div>
       </form>

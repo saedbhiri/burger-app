@@ -31,6 +31,11 @@ export class ShoppingCartService {
     this.shoppingCartChanged.next(this.shoppingCart.slice());
   }
 
+  deleteShoppingCart(){
+    this.shoppingCart = [];
+    this.shoppingCartChanged.next(this.shoppingCart.slice());
+  }
+
   updateShoppingCart(index: number, newItem: Menu) {
     this.shoppingCart[index] = newItem;
     this.shoppingCartChanged.next(this.shoppingCart.slice());

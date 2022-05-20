@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CustomerInformationComponent implements OnInit {
 
-  custonerInfoForm: FormGroup;
+  customerInfoForm: FormGroup;
 
   constructor(private router: Router,
     private route: ActivatedRoute,
@@ -18,7 +18,7 @@ export class CustomerInformationComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.custonerInfoForm = new FormGroup({
+    this.customerInfoForm = new FormGroup({
       'firstName': new FormControl(null, Validators.required),
       'lastName': new FormControl(null, Validators.required),
       'phoneNumber': new FormControl(null, [Validators.required, Validators.minLength(10), Validators.maxLength(10), Validators.pattern(/^[0-9]+/)]),
@@ -37,8 +37,8 @@ export class CustomerInformationComponent implements OnInit {
   }
 
   onCustomerInfoFormSubmit() {
-    this.shoppingCartService.addCustomerInfo(this.custonerInfoForm.value);
-    this.custonerInfoForm.reset();
+    this.shoppingCartService.addCustomerInfo(this.customerInfoForm.value);
+    this.customerInfoForm.reset();
     this.router.navigate(['../paymentMethod'], { relativeTo: this.route });
   }
 }
