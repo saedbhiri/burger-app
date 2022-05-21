@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "S.K.B-Burger": {
+    "SKB-Burger": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/s.k.b-burger",
+            "outputPath": "dist/skb-burger",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -71,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "S.K.B-Burger:build:production"
+              "browserTarget": "SKB-Burger:build:production"
             },
             "development": {
-              "browserTarget": "S.K.B-Burger:build:development"
+              "browserTarget": "SKB-Burger:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -82,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "S.K.B-Burger:build"
+            "browserTarget": "SKB-Burger:build"
           }
         },
         "test": {
@@ -105,5 +105,5 @@
       }
     }
   },
-  "defaultProject": "S.K.B-Burger"
+  "defaultProject": "SKB-Burger"
 }
