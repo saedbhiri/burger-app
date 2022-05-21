@@ -2,7 +2,7 @@ import { ShoppingCartService } from './../../shopping-cart/shopping-cart.service
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { MenuService } from './../menu.service';
 import { Menu } from './../../shared/menu.model';
-import { Component, OnDestroy, OnInit, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, OnDestroy, OnInit} from '@angular/core';
 import { FormArray, FormControl, FormGroup } from '@angular/forms';
 import { Subscription } from 'rxjs';
 

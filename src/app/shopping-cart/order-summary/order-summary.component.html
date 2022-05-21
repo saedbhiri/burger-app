@@ -2,15 +2,104 @@
 <div class="container text-center">
   <div class="row">
     <div class="col">
-      <h2>Thank you for choosing us and we hope to see you soon!</h2>
+      <h1>Thank you for your order</h1>
     </div>
   </div>
   <div class="row">
     <div class="col">
+      <h4>your order has been received and is now being proccessed. your order details are shown below for your
+        reference</h4>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col">
+      <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Item</th>
+            <th scope="col">Quantiny</th>
+            <th scope="col">Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of shoppingCart">
+            <td>{{item.name}}</td>
+            <td>{{item.amount}}</td>
+            <td>{{calculateItemPrice(item) | currency:"ILS"}}</td>
+          </tr>
+        </tbody>
+        <thead>
+          <tr>
+            <th scope="col">Payment Status:</th>
+            <th scope="col">{{paymentStatus}}</th>
+          </tr>
+        </thead>
+        <thead>
+          <tr>
+            <th scope="col">Payment Method:</th>
+            <th scope="col">{{paymentMethod}}</th>
+          </tr>
+        </thead>
+        <thead>
+          <tr>
+            <th scope="col">Cart Subtotal:</th>
+            <th scope="col">{{cartSubtotal | currency:"ILS"}}</th>
+          </tr>
+        </thead>
+        <thead>
+          <tr>
+            <th scope="col">Shipping:</th>
+            <th scope="col">{{shippingPrice | currency:"ILS"}}</th>
+          </tr>
+        </thead>
+        <thead>
+          <tr>
+            <th scope="col">Total Order:</th>
+            <th scope="col">{{cartSubtotal + shippingPrice | currency:"ILS"}}</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+  </div>
+  <br>
+  <div class="row" *ngIf="receivingOrderWay === 'TakeAway'">
+    <div class="col">
+      <h1>Order collection</h1>
+      <p>You have chosen to collect the order from one of our branches</p>
+      <p>Your order will be waiting for you at</p>
+      <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+      </svg> {{branch.city}} - <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+        <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
+      </svg> {{branch.address}}</p>
+      <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+      </svg> {{branch.phoneNumber}}</p>
+    </div>
+  </div>
+  <div class="row" *ngIf="receivingOrderWay === 'Delivery'">
+    <div class="col">
+      <h1>Shipping address</h1>
+      <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+      </svg> {{customerInfo.firstName}} {{customerInfo.lastName}}</p>
+      <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+      </svg> {{customerInfo.phoneNumber}} <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+      </svg> {{customerInfo.email}}</p>
+      <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+        <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
+      </svg> Street {{customerInfo.streetNumber}} House No. {{customerInfo.houseNumber}}</p>
+      <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+      </svg> {{customerInfo.city}} Zip {{customerInfo.zip}}</p>
     </div>
   </div>
   <div class="row">
     <div class="col">
+      <button type="button" class="btn btn-dark btn-lg" (click)="onBackToHome()">Back To Home</button>
     </div>
   </div>
 </div>

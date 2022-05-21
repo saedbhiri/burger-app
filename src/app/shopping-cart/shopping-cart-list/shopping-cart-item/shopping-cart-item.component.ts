@@ -12,7 +12,6 @@ export class ShoppingCartItemComponent implements OnInit {
   @Input() shoppingCartItem: Menu;
   @Input() indexOfItem: number;
   @Output() deleteItem = new EventEmitter<number>();
-  //@Output() editItem = new EventEmitter<number>();
   price: number;
   sideDishesName: string[];
   ingredientsName: string[];

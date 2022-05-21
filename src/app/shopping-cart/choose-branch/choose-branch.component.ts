@@ -47,7 +47,7 @@ export class ChooseBranchComponent implements OnInit {
 
   }
 
-  onChoose(branch: string, start: string, end: string) {
+  onChoose(branch: Branch, start: string, end: string) {
     if (this.checkTime(start, end)) {
       this.shoppingCartService.storeBranch(branch);
       this.router.navigate(['../receivingOrderWay'], { relativeTo: this.route });

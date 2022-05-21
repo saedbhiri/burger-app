@@ -1,3 +1,4 @@
+import { Branch } from './../shared/branch.model';
 import { CreditCard } from './../shared/creditCard.model';
 import { CustomerInfo } from './../shared/customerInfo.model';
 import { Menu } from './../shared/menu.model';
@@ -11,7 +12,7 @@ export class ShoppingCartService {
   shoppingCartChanged = new Subject<Menu[]>();
   private totalPrice: number = 0;
   private deliveryPrice: number = 0;
-  private branchName: string;
+  private branch: Branch;
   private receivingOrderWay: string;
   private paymentMethod: string;
   private customerInfo: CustomerInfo;
@@ -109,12 +110,12 @@ export class ShoppingCartService {
     return saucesNames;
   }
 
-  storeBranch(branch: string) {
-    this.branchName = branch;
+  storeBranch(branch: Branch) {
+    this.branch = branch;
   }
 
   getBranch() {
-    return this.branchName;
+    return this.branch;
   }
 
   storeReceivingOrderWay(order: string) {
@@ -160,6 +161,16 @@ export class ShoppingCartService {
 
   getCreditCard() {
     return this.creditCard;
+  }
+
+  resetData(){
+  this.totalPrice = 0;
+  this.deliveryPrice = 0;
+  this.branch = null;
+  this.receivingOrderWay = "";
+  this.paymentMethod = "";
+  this.customerInfo = null;
+  this.creditCard = null;
   }
 
 }
