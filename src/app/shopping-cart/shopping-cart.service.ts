@@ -32,7 +32,7 @@ export class ShoppingCartService {
     this.shoppingCartChanged.next(this.shoppingCart.slice());
   }
 
-  deleteShoppingCart(){
+  deleteShoppingCart() {
     this.shoppingCart = [];
     this.shoppingCartChanged.next(this.shoppingCart.slice());
   }
@@ -155,6 +155,10 @@ export class ShoppingCartService {
     return this.deliveryPrice;
   }
 
+  setDeliveryPriceToZero() {
+    this.deliveryPrice = 0;
+  }
+
   addCreditCard(creditCard: CreditCard) {
     this.creditCard = creditCard;
   }
@@ -163,14 +167,14 @@ export class ShoppingCartService {
     return this.creditCard;
   }
 
-  resetData(){
-  this.totalPrice = 0;
-  this.deliveryPrice = 0;
-  this.branch = null;
-  this.receivingOrderWay = "";
-  this.paymentMethod = "";
-  this.customerInfo = null;
-  this.creditCard = null;
+  resetData() {
+    this.totalPrice = 0;
+    this.deliveryPrice = 0;
+    this.branch = null;
+    this.receivingOrderWay = "";
+    this.paymentMethod = "";
+    this.customerInfo = null;
+    this.creditCard = null;
   }
 
 }

@@ -15,6 +15,8 @@ export class ReceiveOrderWayComponent implements OnInit {
 
   OnReceivingWay(receivingWay:string){
     this.shoppingCartService.storeReceivingOrderWay(receivingWay);
+    if (receivingWay === "TakeAway")
+    this.shoppingCartService.setDeliveryPriceToZero();
   }
 
 }

@@ -34,7 +34,6 @@ export class OrderSummaryComponent implements OnInit {
     this.customerInfo = this.shoppingCartService.getCustomerInfo();
     this.branch = this.shoppingCartService.getBranch();
     this.receivingOrderWay = this.shoppingCartService.getReceivingOrderWay();
-    this.shoppingCartService.deleteShoppingCart();
   }
 
   calculateItemPrice(item: Menu) {
@@ -53,6 +52,7 @@ export class OrderSummaryComponent implements OnInit {
   }
 
   onBackToHome(): void {
+    this.shoppingCartService.deleteShoppingCart();
     this.shoppingCartService.resetData();
     this.router.navigate(['/main'], { relativeTo: this.route })
   }
